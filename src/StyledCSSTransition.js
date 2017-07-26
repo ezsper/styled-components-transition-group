@@ -1,7 +1,7 @@
 /*
  * This is just an experiment, a copy of CSSTransition, it should be using
- * CSSTransition by default. We are testing some kind of nested transition
- * with transition bounds.
+ * CSSTransition by default. We are testing here some kind of nested transition
+ * with transition bounds passed as props.
  */
 import * as PropTypes from 'prop-types';
 import addOneClass from 'dom-helpers/class/addClass';
