@@ -1,5 +1,5 @@
 # styled-components-transition-group
-A simple example of how styled-components should be using react-transition-group
+A simple example of how styled-components could implement react-transition-group (based on issue [#1036](https://github.com/styled-components/styled-components/issues/1036)) to solve transitions.
 
 ```
 import styled from 'styled-components-transition-group';
