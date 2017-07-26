@@ -1,0 +1,21 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7"]
+      }
+    }],
+    "stage-3",
+    "react"
+  ],
+  "plugins": [
+    "transform-export-extensions",
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-react-constant-elements",
+    "transform-react-inline-elements",
+    "transform-react-jsx-self",
+    "transform-react-jsx-source",
+    "styled-components"
+  ]
+}

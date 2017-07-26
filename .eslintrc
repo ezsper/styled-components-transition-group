@@ -1,0 +1,55 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "ecmaFeatures": {
+    "defaultParams": true
+  },
+  "globals": {
+    "__ASYNC_BOOTSTRAP__": true,
+    "__SERVER__": true,
+    "__CLIENT__": true,
+    "__DEVELOPMENT__": true,
+    "__NODE__": true,
+    "__FIRST_LANGUAGE__": true
+  },
+  "rules": {
+    "no-underscore-dangle": ["error", {
+      "allow": [
+        "__STORE__",
+        "__ASYNC_BOOTSTRAP__",
+        "__ASYNC_COMPONENTS_REHYDRATE_STATE__",
+        "__SERVER__",
+        "__CLIENT__",
+        "__DEVELOPMENT__",
+        "__NODE__",
+        "__FIRST_LANGUAGE__"
+      ]
+    }],
+    // Know why: https://medium.com/@nikgraf/why-you-should-enforce-dangling-commas-for-multiline-statements-d034c98e36f8
+    "comma-dangle": 1,
+    // TODO: It makes sense to have this rule enabled (fix wanted)
+    "react/require-default-props": 0,
+    "react/no-unused-prop-types": 0,
+    // TODO: Need revision
+    "arrow-body-style": 0,
+    // A jsx extension is not required for files containing jsx
+    "react/jsx-filename-extension": 0,
+    // TODO: This rule struggles with flow and class properties
+    "react/sort-comp": 0,
+    // ignore linebreak style. the CRLF / LF endings wont matter
+    // if a windows user correctly converts CRLF to LF upon commits otherwise
+    // there are errors every line.
+    "linebreak-style": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
+}

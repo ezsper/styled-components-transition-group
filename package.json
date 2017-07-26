@@ -1,0 +1,71 @@
+{
+  "name": "styled-components-transition-group",
+  "version": "0.0.1",
+  "description": "A functional example on how react-transition-group could be working with styled-components",
+  "main": "lib/index.js",
+  "author": "Ezequiel S. Pereira <ezequiel@ezsper.com> (http://github.com/ezsper)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "lint": "eslint src stories",
+    "precommit": "lint-staged",
+    "prepush": "jest",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezsper/styled-components-transition-group.git"
+  },
+  "keywords": [
+    "styled-components",
+    "react-transition-group",
+    "react"
+  ],
+  "bugs": {
+    "url": "https://github.com/ezsper/styled-components-transition-group/issues"
+  },
+  "homepage": "https://github.com/ezsper/styled-components-transition-group#readme",
+  "dependencies": {
+    "prop-types": "15.5.8",
+    "react": "15.5.4",
+    "react-dom": "15.5.4",
+    "react-transition-group": "2.2.0",
+    "classnames":"^2.2.5",
+    "dom-helpers":"^3.2.0",
+    "styled-components": "2.0.0"
+  },
+  "devDependencies": {
+    "@storybook/cli": "^3.1.9",
+    "@storybook/react": "^3.1.9",
+    "assets-webpack-plugin": "3.5.1",
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.2",
+    "babel-jest": "19.0.0",
+    "babel-plugin-transform-class-properties": "6.16.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-export-extensions": "6.22.0",
+    "babel-plugin-transform-react-constant-elements": "6.23.0",
+    "babel-plugin-transform-react-inline-elements": "6.22.0",
+    "babel-plugin-transform-react-jsx-self": "6.22.0",
+    "babel-plugin-transform-react-jsx-source": "6.22.0",
+    "babel-plugin-styled-components": "1.1.6",
+    "babel-preset-env": "1.4.0",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-loader": "1.7.1",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-react": "7.0.1",
+    "jest": "19.0.2",
+    "lint-staged": "3.4.0"
+  }
+}
