@@ -2,7 +2,7 @@
 A simple example of how styled-components should be using react-transition-group
 
 ```
-import styled, { createTransition } from 'styled-components-transition-group';
+import styled from 'styled-components-transition-group';
 
 //transition() wraps TransitionGroup
 const List = styled.div.transition() ``;
