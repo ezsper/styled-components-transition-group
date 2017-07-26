@@ -20,6 +20,6 @@ const ListItem = styled.div.animated() `
 `;
 ```
 
-Launch storybook for the following example.
+Launch storybook for a working example of this proposition.
 
 ![storybook](https://user-images.githubusercontent.com/798804/28619716-1e739c46-71e0-11e7-97b7-cfab48a1339b.gif)
